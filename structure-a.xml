@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="tofu test" tests="3" failures="0" errors="0" skipped="0">
+  <testsuite name="tests/s3.tftest.hcl" tests="2" failures="0" errors="0" skipped="0">
+    <testcase name="bucket_exists" classname="tests/s3.tftest.hcl"/>
+    <testcase name="bucket_private" classname="tests/s3.tftest.hcl"/>
+  </testsuite>
+  <testsuite name="tests/iam.tftest.hcl" tests="1" failures="0" errors="0" skipped="0">
+    <testcase name="role_exists" classname="tests/iam.tftest.hcl"/>
+  </testsuite>
+</testsuites>
