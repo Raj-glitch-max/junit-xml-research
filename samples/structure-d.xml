@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="tofu test" tests="4" failures="1" errors="0" skipped="0">
+  <testsuite name="tests/s3.tftest.hcl" tests="4" failures="1" errors="0" skipped="0">
+    <testcase name="check_bucket_private/assert[0]: bucket ACL is private" classname="tests/s3.tftest.hcl">
+      <failure message="bucket ACL is private: condition is false">expected private, got public-read</failure>
+    </testcase>
+    <testcase name="check_bucket_private/assert[1]: bucket versioning enabled" classname="tests/s3.tftest.hcl"/>
+    <testcase name="verify_tags/assert[0]: has environment tag" classname="tests/s3.tftest.hcl"/>
+    <testcase name="verify_tags/assert[1]: has owner tag" classname="tests/s3.tftest.hcl"/>
+  </testsuite>
+</testsuites>

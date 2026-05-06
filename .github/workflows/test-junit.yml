@@ -53,3 +53,45 @@ jobs:
           path: samples/structure-c.xml
           reporter: java-junit
           fail-on-error: false
+
+    structure-d:
+    name: "Structure D - Assert as testcase"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Report
+        uses: dorny/test-reporter@v1
+        if: always()
+        with:
+          name: "Structure D Results"
+          path: samples/structure-d.xml
+          reporter: java-junit
+          fail-on-error: false
+
+  structure-e:
+    name: "Structure E - Run as testsuite"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Report
+        uses: dorny/test-reporter@v1
+        if: always()
+        with:
+          name: "Structure E Results"
+          path: samples/structure-e.xml
+          reporter: java-junit
+          fail-on-error: false
+
+  structure-f:
+    name: "Structure F - Full diagnostic detail"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Report
+        uses: dorny/test-reporter@v1
+        if: always()
+        with:
+          name: "Structure F Results"
+          path: samples/structure-f.xml
+          reporter: java-junit
+          fail-on-error: false
