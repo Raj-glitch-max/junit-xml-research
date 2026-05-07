@@ -54,7 +54,7 @@ jobs:
           reporter: java-junit
           fail-on-error: false
 
-    structure-d:
+  structure-d:
     name: "Structure D - Assert as testcase"
     runs-on: ubuntu-latest
     steps:
